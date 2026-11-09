@@ -5,6 +5,35 @@
 不训练模型。三个角色共用配置中的模型，由 LangGraph 按顺序调度。默认只检索 2025 年底之前的文献；只分析摘要，不声称已读全文。
 
 
+## 论文来源与项目定位
+
+本项目基于 Jiarui Liu 等人于 2026 年发表的论文 **[IdeaScientist: Orchestrating Agents for Grounded Scientific Ideation](https://arxiv.org/abs/2610.04074)**（arXiv:2610.04074）进行简化实现，参考其“研究空白发现（Gap Finder）→ 创新构想（Innovator）→ 研究方案撰写（Report Writer）”的三角色协作框架。
+
+- 论文：https://arxiv.org/abs/2610.04074
+- 作者代码仓库：https://github.com/jiarui-liu/IdeaScientist
+- 公开数据集：https://huggingface.co/datasets/Jerry999/SvalbardIdeaVault
+
+本仓库是面向学习与演示的简化实现。当前版本通过 LangGraph 串联流程，调用配置中的模型，并使用 Semantic Scholar 检索论文摘要；未实现论文中的角色强化学习训练，也未复现论文的完整检索系统和实验指标。
+
+## 可视化网页界面
+
+仓库已包含完整的 Streamlit 界面源码：`app.py` 为网页入口，`ui/` 提供引用展示与任务管理功能。界面支持研究问题输入、阶段进度与结果查看、文献引用、方案下载、历史任务管理和检查点恢复。
+
+在已准备好 Python 环境的项目目录中安装依赖并创建配置文件：
+
+```powershell
+python -m pip install -r requirements.txt
+Copy-Item .env.example .env
+```
+
+在 `.env` 中填写模型接口地址、模型名称和 API 密钥后，启动网页：
+
+```powershell
+python -m streamlit run app.py
+```
+
+按终端显示的本地地址访问，通常为 `http://localhost:8501`。GitHub 仓库存放网页源码；目前尚未部署公开在线演示站点。
+
 ## 当前代码结构与页面启动
 
 项目根目录只有八个职责明确的 Python 文件：
