@@ -1,0 +1,8 @@
+{
+  "sample_id": "2605.06908",
+  "problem_definition": "Formal setting: At each step t, an agent observes state s_t and selects action a_t. An optimizer T can be invoked. The utility is U(T, s) = E[R(a=T(s))] - E[R(a=π(s))]. The goal is to learn a gate g: S -> {0,1} that triggers T only when U > 0.. Inputs: State s_t and gating signal φ(s_t) (e.g., entropy). Outputs: Binary gate decision g(s) ∈ {0, 1}\n\nProblem statement: Existing adaptive compute gates assume a fixed relationship between uncertainty signals and the value of extra computation, but this relationship reverses across environments and model backbones, causing gates to actively select harmful states.. Why it matters: Wastes compute resources by triggering rollouts when they degrade performance. Fixed-direction gates fail across heterogeneous agent settings due to unstable signal semantics. There is a lack of principled methods to align gating signals with actual counterfactual utility.",
+  "challenge": "Existing adaptive compute gates assume a fixed relationship between uncertainty signals and the value of extra computation, but this relationship reverses across environments and model backbones, causing gates to actively select harmful states..",
+  "challenge_source": "dataset.problem_definition.Problem statement",
+  "target_arxiv_id": "2605.06908",
+  "target_title": "Same Signal, Opposite Meaning: Direction-Informed Adaptive Learning for LLM Agents"
+}

@@ -1,0 +1,8 @@
+{
+  "dataset": "Jerry999/SvalbardIdeaVault",
+  "source_url": "https://huggingface.co/datasets/Jerry999/SvalbardIdeaVault/resolve/main/records/test/part-00000.jsonl.zst",
+  "accessed_date": "2026-10-31",
+  "compressed_sha256": "ea31f6e0e50088dcbcb637e3c4c02136b2f514e4b4224da8a557908845011944",
+  "actual_rows": 272,
+  "note": "源链接 main 可变化，以本地 SHA256 标识本次实际分片。"
+}

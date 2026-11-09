@@ -1,0 +1,8 @@
+{
+  "sample_id": "appendix_case_1_composable_safety",
+  "problem_definition": "Given a frozen language model and a set of safety categories, each request includes a user question and the subset of safety rules that applies to that request. The model must answer helpfully while following every active rule and avoiding refusal based only on inactive rules.",
+  "challenge": "Safety rules vary across users and contexts. A model trained for one fixed policy may not reliably apply different combinations of rules, and written instructions may fail when several rules must be followed at once.",
+  "challenge_source": "IdeaScientist paper, Appendix I.1, Table 13",
+  "target_arxiv_id": "2603.16210",
+  "target_title": "MOSAIC: Composable Safety Alignment with Modular Control Tokens"
+}

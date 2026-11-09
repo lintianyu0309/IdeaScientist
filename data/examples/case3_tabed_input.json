@@ -1,0 +1,8 @@
+{
+  "sample_id": "2601.20357",
+  "problem_definition": "Formal setting: Given a target model $M_p$ and a draft model $M_q$, speculative decoding generates draft tokens using $M_q$ and verifies them in parallel using $M_p$ to approximate the target distribution $p(y|x, y_{<t})$ while accelerating inference.. Inputs: Image and text prompts, past verified tokens, and target model probabilities. Outputs: Draft token probabilities and accepted draft tokens for accelerated generation\n\nProblem statement: Existing speculative decoding drafting methods for Large Vision-Language Models (LVLMs) exhibit scenario-specific performance fluctuations, making it difficult to select a single drafting approach that consistently accelerates inference across diverse multimodal inputs.. Why it matters: LVLMs require significantly higher inference time due to image token processing, making acceleration critical for real-world deployment. Current drafting methods either ignore visual context or require additional training, failing to adapt to varying turn-taking, task types, and out-of-distribution scenarios.",
+  "challenge": "Existing speculative decoding drafting methods for Large Vision-Language Models (LVLMs) exhibit scenario-specific performance fluctuations, making it difficult to select a single drafting approach that consistently accelerates inference across diverse multimodal inputs..",
+  "challenge_source": "dataset.problem_definition.Problem statement",
+  "target_arxiv_id": "2601.20357",
+  "target_title": "TABED: Test-Time Adaptive Ensemble Drafting for Robust Speculative Decoding in LVLMs"
+}

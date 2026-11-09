@@ -1,0 +1,8 @@
+{
+  "sample_id": "2602.22583",
+  "problem_definition": "Formal setting: Given a problem x, a target model m, and a prompting/decoding protocol π, executability is defined as U(s|x; m, π) = P(success=1 | x, s, m, π), the probability that strategy s leads to a correct solution.. Inputs: A mathematical problem and a set of candidate reasoning strategies extracted from human or model solutions.. Outputs: A ranked subset of strategies selected as inference-time guidance for the target model.\n\nProblem statement: Example-based guidance for mathematical reasoning is highly unstable because strategies that appear in successful solutions are not always executable by a target model when transferred as guidance.. Why it matters: Guidance reliability is crucial for improving LLM mathematical reasoning without expensive training. Prior work conflates strategy usage with executability, ignoring systematic human-model differences that cause guidance failures.",
+  "challenge": "Example-based guidance for mathematical reasoning is highly unstable because strategies that appear in successful solutions are not always executable by a target model when transferred as guidance..",
+  "challenge_source": "dataset.problem_definition.Problem statement",
+  "target_arxiv_id": "2602.22583",
+  "target_title": "Strategy Executability in Mathematical Reasoning: Leveraging Human-Model Differences for Effective Guidance"
+}

@@ -1,0 +1,16 @@
+{
+  "dataset": "Jerry999/SvalbardIdeaVault",
+  "source_rows": 272,
+  "source_content_hash": "30c4f2a81ef4fe0ec483dbfc6568c3eb04cdd42e52ea4dc3271503f19b506863",
+  "seed": 20261031,
+  "selection_rule": "three verified appendix test IDs first, then seeded shuffle; explicit challenge required",
+  "selected_ids": [
+    "2606.18668",
+    "2603.16210",
+    "2601.20357",
+    "2602.22583",
+    "2605.06908"
+  ],
+  "input_hash": "84fbbdecb412cfe96691f233e369e497ae9d322d7335e4436e9e17ad7b79f369",
+  "challenge_rule": "extract Problem statement without reading solution"
+}

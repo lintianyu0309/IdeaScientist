@@ -1,0 +1,8 @@
+{
+  "sample_id": "2606.18668",
+  "problem_definition": "Formal setting: Centralized MAS with a coordinator routing queries to domain-specialized sub-agents. The goal is to improve sub-agent response reliability by detecting unsolvable queries and returning structured abstention signals.. Inputs: User query, sub-agent context, available capabilities and business constraints.. Outputs: Task-specific structured response (e.g., DSL query) OR structured abstention signal containing a failure category and rationale.\n\nProblem statement: In centralized multi-agent systems, smaller specialized sub-agents often over-answer ambiguous, unsupported, or misrouted requests, producing hallucinated outputs instead of actionable feedback for the coordinator.. Why it matters: Reliability of large-scale enterprise MAS depends on sub-agent execution, not just coordinator routing. Prior work focuses on top-down routing, leaving sub-agent communication breakdowns and execution failures unexplored. Over-answering by sub-agents propagates errors to end-users and wastes computational resources.",
+  "challenge": "In centralized multi-agent systems, smaller specialized sub-agents often over-answer ambiguous, unsupported, or misrouted requests, producing hallucinated outputs instead of actionable feedback for the coordinator..",
+  "challenge_source": "dataset.problem_definition.Problem statement",
+  "target_arxiv_id": "2606.18668",
+  "target_title": "EARS: Explanatory Abstention for Reliable Sub-Agent Modeling in Large-scale Multi-Agent Systems"
+}
